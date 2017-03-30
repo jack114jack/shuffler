@@ -40,8 +40,8 @@ begin
   5.times { example.read('NULL:black') { self.size = '70x70'} }
 
   puts '   draw...'
-  # example << model.cur_image.copy
-  # example.cur_image[:Label] = 'Draw'
+  example << model.cur_image.copy
+  example.cur_image[:Label] = 'Draw'
   gc = Draw.new
   gc.fill 'black'
   # gc.fill_opacity 0
