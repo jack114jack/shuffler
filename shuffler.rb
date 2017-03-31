@@ -85,13 +85,13 @@ class Shuffler < Gosu::Window
     if id == Gosu::KB_ESCAPE
       close
     elsif id == Gosu::KB_LEFT
-      move_left
-    elsif id == Gosu::KB_RIGHT
       move_right
+    elsif id == Gosu::KB_RIGHT
+      move_left
     elsif id == Gosu::KB_UP
-      move_up
-    elsif id == Gosu::KB_DOWN
       move_down
+    elsif id == Gosu::KB_DOWN
+      move_up
     end
   end
 
